@@ -1,7 +1,7 @@
 import React, { Component, useState, useEffect } from "react";
 import "../styles/App.css";
 
-const App = () => {
+export default function App() {
   const [currentTime, setCurrentTime] = useState(0);
 
   const reverseCount = (event, inputValue) => {
@@ -38,5 +38,4 @@ const App = () => {
       <div id="current-time">{currentTime}</div>
     </div>
   );
-};
-export default App;
+}
